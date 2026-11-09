@@ -1,0 +1,5 @@
+# Needs Python 3.9 - 3.12. MediaPipe 0.10.21 is the last release family that
+# ships the stable `mp.solutions.hands` API with its model bundled (no extra
+# model download). It also installs OpenCV (opencv-contrib-python) itself.
+mediapipe==0.10.21
+numpy<2
