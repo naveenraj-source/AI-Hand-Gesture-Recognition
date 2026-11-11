@@ -1,0 +1,5 @@
+# Dependencies for local desktop OpenCV webcam mode (python main.py --desktop)
+flask>=3.0.0
+mediapipe==0.10.21
+numpy<2
+opencv-python-headless>=4.8.0,<5

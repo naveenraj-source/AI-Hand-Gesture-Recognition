@@ -57,14 +57,18 @@ pip install -r requirements.txt
 
 ## Run
 
+### Option 1: Live In-Browser Camera & Web App (Default & Vercel)
 ```bash
-python main.py                # default webcam
-python main.py --camera 1     # external webcam
-python main.py --no-flip      # disable mirror view
-python main.py --image hand.jpg --output result.jpg   # classify one photo
+python main.py
 ```
+This starts the local web server at `http://localhost:5000` and automatically opens your browser with the **Live Camera** interface. Click **"Start Camera"** to recognize gestures in real-time.
 
-Keys in the webcam window: **q** or **Esc** = quit, **s** = save a screenshot to `screenshots/`.
+### Option 2: Native Desktop OpenCV Camera Window
+```bash
+python main.py --desktop            # default webcam (index 0)
+python main.py --desktop --camera 1  # external webcam (index 1)
+```
+Keys in the desktop webcam window: **q** or **Esc** = quit, **s** = save a screenshot to `screenshots/`.
 
 ## Run the tests
 
